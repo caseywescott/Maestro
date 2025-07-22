@@ -1,0 +1,71 @@
+{
+  "name": "maestro",
+  "version": "0.1.0",
+  "description": "Adaptive music system inspired by LucasArts iMUSE technology",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "adaptive-music",
+    "imuse",
+    "music",
+    "audio",
+    "react",
+    "typescript",
+    "gaming",
+    "blockchain",
+    "torii",
+    "midi",
+    "soundtrack",
+    "interactive-music"
+  ],
+  "author": "Maestro Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/maestro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/maestro/issues"
+  },
+  "homepage": "https://github.com/your-username/maestro#readme",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src --ext .ts",
+    "test": "npx ts-node src/testMaestro.ts",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "docs": "typedoc src/index.ts --out docs/api",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "check-format": "prettier --check \"src/**/*.ts\""
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.6",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "prettier": "^3.0.0",
+    "typedoc": "^0.25.0"
+  },
+  "optionalDependencies": {
+    "@dojoengine/sdk": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

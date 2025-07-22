@@ -1,0 +1,7 @@
+# .npmignore
+src/
+tests/
+.vscode/
+node_modules/
+tsconfig.json
+*.log
