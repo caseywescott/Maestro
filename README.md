@@ -250,6 +250,59 @@ npm start
 
 This example shows how to integrate Maestro with actual MIDI playback, sound-fonts, and create a fully interactive music experience.
 
+### MIDI-2-Maestro-Cues - MIDI Conversion Tool
+
+A Python tool for converting MIDI files into iMUSE (Interactive Music Streaming Engine) cue format for use in interactive music systems and game audio engines.
+
+**[View MIDI-2-Maestro-Cues Tool](https://github.com/caseywescott/Midi-2-Maestro-Cues)**
+
+#### Features
+- **🎵 Key Detection**: Uses both MIDI key signatures and music21 analysis for accurate key detection
+- **⏱️ Tempo Analysis**: Extracts precise tempo information from MIDI files
+- **🎯 Entry Points**: Automatically detects SysEx markers with value 69 for cue entry points
+- **🎚️ Layer Management**: Preserves multi-track information with channel and volume data
+- **📊 Multiple Analysis Modes**: Choose between MIDI metadata or music21 analysis
+- **🔧 Flexible Processing**: Process individual files or entire folders
+
+#### Quick Start
+```bash
+# Clone the tool
+git clone https://github.com/caseywescott/Midi-2-Maestro-Cues.git
+cd Midi-2-Maestro-Cues
+
+# Install dependencies
+pip install pretty_midi music21 mido numpy
+
+# Convert MIDI files to Maestro cues
+python generate_cues.py /path/to/midi/folder output_cues.json
+```
+
+#### Output Format
+The tool generates JSON files compatible with Maestro's cue format:
+```json
+[
+  {
+    "id": "filename_without_extension",
+    "key": 2,
+    "tempo": 132.9999468000213,
+    "entryPoints": [
+      [0, 0.0],
+      [3840, 3.609],
+      [34560, 32.481]
+    ],
+    "layers": [
+      {
+        "id": "layer_name",
+        "channel": 0,
+        "volume": 100
+      }
+    ]
+  }
+]
+```
+
+This tool makes it easy to convert existing MIDI files into the cue format that Maestro can use for adaptive music systems.
+
 ## 🔧 Development
 
 ### Prerequisites
