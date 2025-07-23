@@ -220,6 +220,36 @@ Game Events → Torii Listener → Transition Manager → Scheduler → Audio En
 - **Player Actions**: Dynamic soundtracks based on player decisions
 - **Game State**: Musical themes that reflect current game conditions
 
+## 🎵 Interactive Examples
+
+### Maestro Player - Sound-Font Integration
+
+A comprehensive React example demonstrating Maestro's capabilities with real MIDI playback, sound-font integration, and interactive controls.
+
+**[View Maestro Player Example](https://github.com/caseywescott/Maestro-Player)**
+
+#### Features Demonstrated
+- **🎵 Smart Transitions**: Intelligent musical transitions with context awareness
+- **🎛️ Layer Management**: Real-time audio layer control and fade effects
+- **📊 MIDI Analysis**: Comprehensive MIDI file analysis and visualization
+- **🎼 Live Controls**: Tempo, transpose, reverb, and instrument switching
+- **🧠 Adaptive Music**: Dynamic layer adjustments based on user actions
+
+#### Quick Start
+```bash
+# Clone the example repository
+git clone https://github.com/caseywescott/Maestro-Player.git
+cd Maestro-Player
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
+This example shows how to integrate Maestro with actual MIDI playback, sound-fonts, and create a fully interactive music experience.
+
 ## 🔧 Development
 
 ### Prerequisites
